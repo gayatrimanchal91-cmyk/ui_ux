@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UX/UI Design Internship Model & Prototype</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="#" class="brand">Design<span>Flow</span></a>
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="#process">UX Process</a></li>
+          <li><a href="#design-system">Design System</a></li>
+        </ul>
+      </nav>
+      <a href="#design-system" class="btn btn-primary">Inspect Tokens</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="badge">UI/UX Design Case Study &amp; Prototype</span>
+          <h1>User-Centred Interfaces Built for Clarity &amp; Consistency</h1>
+          <p>
+            A responsive landing page and reusable component system translating UX research,
+            user flows, and low-fidelity wireframes into an accessible digital experience.
+          </p>
+          <div class="hero-actions">
+            <a href="#process" class="btn btn-primary">View 9-Stage Workflow</a>
+            <a href="#design-system" class="btn btn-secondary">Design Tokens</a>
+          </div>
+        </div>
+        <div class="hero-card" aria-label="Interactive Prototype Preview">
+          <div class="mockup-header">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          </div>
+          <div class="mockup-body">
+            <h3>Information Hierarchy</h3>
+            <p>Structured visual weight, contrast, and spacing engineered for rapid scanning.</p>
+            <div class="metric-row">
+              <div class="metric"><strong>9</strong><span>Workflow Stages</span></div>
+              <div class="metric"><strong>100%</strong><span>Responsive Grid</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="section">
+      <div class="container">
+        <h2 class="section-title">End-to-End UI/UX Process Model</h2>
+        <div id="workflow-grid" class="card-grid"></div>
+      </div>
+    </section>
+
+    <section id="design-system" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Design System Tokens</h2>
+        <div class="token-grid">
+          <div class="card">
+            <h3>Color Palette</h3>
+            <div class="swatch-list">
+              <div class="swatch" style="--c:#1e3a8a">Primary <code>#1E3A8A</code></div>
+              <div class="swatch" style="--c:#0f766e">Accent <code>#0F766E</code></div>
+              <div class="swatch" style="--c:#0f172a">Neutral Dark <code>#0F172A</code></div>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Typography Scale</h3>
+            <p class="type-h1">Heading XL — 2.5rem / 700</p>
+            <p class="type-h2">Heading MD — 1.5rem / 600</p>
+            <p class="type-body">Body Regular — 1rem / 400 (1.6 line-height)</p>
+          </div>
+          <div class="card">
+            <h3>Interactive Controls</h3>
+            <div class="control-demo">
+              <button class="btn btn-primary" id="demo-toast-btn">Trigger Action</button>
+              <button class="btn btn-secondary">Secondary State</button>
+            </div>
+            <p id="demo-status" class="status-text" aria-live="polite"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>UI/UX Design Internship Model &bull; Semantic HTML, CSS Tokens &amp; Vanilla JS</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
